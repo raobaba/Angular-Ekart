@@ -1,0 +1,55 @@
+
+.container {
+  width: 100%;
+  margin-top: auto;
+  padding: 0%;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  column-gap: 30px;
+  row-gap: 30px;
+  margin-left: 70px;
+}
+.col {
+  width: 350px;
+  height: 350px;
+}
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(220, 3, 245);
+  text-align: center;
+  margin: auto;
+  font-size: 25px;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+.min{
+    margin-top: -12px;
+}
+.description{
+    font-size: large;
+}
+.example{
+    width: 25%;
+    height: 350px;
+    margin: auto;
+}
+.example>h1{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    margin-top: 0%;
+}
+
