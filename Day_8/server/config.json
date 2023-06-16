@@ -1,0 +1,7 @@
+{
+    "cloudDB" : "mongodb+srv://rajan:kumar@cluster0.vvtoxbl.mongodb.net/masaidb?retryWrites=true&w=majority",
+    "localDB" : "mongodb://localhost:27017/masaidb",
+    "port" : "5050",
+    "host" : "localhost"
+}
+
