@@ -11,7 +11,11 @@
     background-color: #efefef;
     border:#28282B 1px solid;
 }
-
+.btn-search-disable{
+    background-color: #28282B;
+    height: 35px;
+    color: grey;
+}
 
 .btn{
     padding: 5px 10px;
