@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './main-menu.component.html',
   styleUrls: ['./main-menu.component.css']
 })
-export class MainMenuComponent {
-
+export class MainMenuComponent{
+    mainMenu:string[] = ['Home','About','Contact','Services','Address']
 }
