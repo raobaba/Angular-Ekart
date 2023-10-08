@@ -1,5 +1,5 @@
 <div class="ekart--product--container">
-    <!-- <img [src]="product.pImage">
+  <!-- <img [src]="product.pImage">
     <p>Name: {{ product.name }}</p>
     <p>Price: {{ '$' + product.price }}</p>
     <p>Color: {{product.color}}</p>
@@ -10,9 +10,9 @@
     <button (click)="incrementCartValue()">+</button>
     <input (input)="onNameChange($event)"><br>
     <p>name={{name}}</p> -->
-    <app-search (searchTextChanged)="setSearchText($event)"></app-search>
-    <product-list [searchText]="searchText" #productListComponent></product-list>
-    <product-detail *ngIf="productListComponent.selectedProduct"></product-detail>
+  <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+  <product-list [searchText]="searchText" #productListComponent></product-list>
+  <product-detail *ngIf="productListComponent.selectedProduct" [productLitComp]="productListComponent" ></product-detail>
 </div>
 
 <!--Disabled, Hidden, Checked-->

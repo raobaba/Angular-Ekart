@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-container',
   templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css']
+  styleUrls: ['./container.component.css'],
 })
 export class AppContainer {
   // addToCart:number = 0;
@@ -30,18 +31,18 @@ export class AppContainer {
   //   if(this.addToCart > 0){
   //     this.addToCart--;
   //   }
-    
+
   // }
 
   // incrementCartValue(){
   //   if(this.addToCart < this.product.inStock){
   //     this.addToCart++;
   //   }
-    
-  // }
 
-  searchText:string='';
-  setSearchText(value:string){
-       this.searchText=value
+  // }
+  @ViewChild(ProductListComponent) productListComponent: ProductListComponent;
+  searchText: string = '';
+  setSearchText(value: string) {
+    this.searchText = value;
   }
 }
