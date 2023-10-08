@@ -11,6 +11,8 @@ import { SearchComponent } from './container/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './container/product-list/product-list.component';
 import { ProductComponent } from './container/product-list/product/product.component';
+import { FilterComponent } from './container/product-list/product/filter/filter.component';
+import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { ProductComponent } from './container/product-list/product/product.compo
     SearchComponent,
     ProductListComponent,
     ProductComponent,
+    FilterComponent,
+    ProductDetailComponent,
 
   ],
   imports: [

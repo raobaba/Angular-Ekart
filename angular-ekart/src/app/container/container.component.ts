@@ -6,37 +6,42 @@ import { Component } from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class AppContainer {
-  addToCart:number = 0;
-  name='rajan'
-  product = {
-    name: 'iPhone X',
-    price: 789,
-    color: 'Black',
-    discount: 8.5,
-    inStock: 10,
-    pImage: '/assets/images/iphone.png'
-  }
+  // addToCart:number = 0;
+  // name='rajan'
+  // product = {
+  //   name: 'iPhone X',
+  //   price: 789,
+  //   color: 'Black',
+  //   discount: 8.5,
+  //   inStock: 10,
+  //   pImage: '/assets/images/iphone.png'
+  // }
 
-  getDiscountedPrice() {
-    return this.product.price - (this.product.price * this.product.discount / 100)
-  }
+  // getDiscountedPrice() {
+  //   return this.product.price - (this.product.price * this.product.discount / 100)
+  // }
 
-  onNameChange(event: any){
-    this.name = event.target.value;
-    console.log(event.target.value);
-  }
+  // onNameChange(event: any){
+  //   this.name = event.target.value;
+  //   console.log(event.target.value);
+  // }
 
-  decrementCartValue(){
-    if(this.addToCart > 0){
-      this.addToCart--;
-    }
+  // decrementCartValue(){
+  //   if(this.addToCart > 0){
+  //     this.addToCart--;
+  //   }
     
-  }
+  // }
 
-  incrementCartValue(){
-    if(this.addToCart < this.product.inStock){
-      this.addToCart++;
-    }
+  // incrementCartValue(){
+  //   if(this.addToCart < this.product.inStock){
+  //     this.addToCart++;
+  //   }
     
+  // }
+
+  searchText:string='';
+  setSearchText(value:string){
+       this.searchText=value
   }
 }
