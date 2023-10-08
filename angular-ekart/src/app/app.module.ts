@@ -13,6 +13,7 @@ import { ProductListComponent } from './container/product-list/product-list.comp
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/product/filter/filter.component';
 import { ProductDetailComponent } from './container/product-detail/product-detail.component';
+import { ViewhildComponent } from './viewhild/viewhild.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { ProductDetailComponent } from './container/product-detail/product-detai
     ProductComponent,
     FilterComponent,
     ProductDetailComponent,
+    ViewhildComponent,
 
   ],
   imports: [
